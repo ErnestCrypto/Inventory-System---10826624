@@ -106,3 +106,5 @@ C:\Users\Admin\source\repos\Inventory System - 10826624\Inventory System - 10826
 C:\Users\Admin\source\repos\Inventory System - 10826624\Inventory System - 10826624\bin\Debug\net6.0-windows\runtimes\win\lib\net6.0\System.Speech.dll
 C:\Users\Admin\source\repos\Inventory System - 10826624\Inventory System - 10826624\obj\Debug\net6.0-windows\Inventory System - 10826624.csproj.CopyComplete
 C:\Users\Admin\source\repos\Inventory System - 10826624\Inventory System - 10826624\obj\Debug\net6.0-windows\Inventory_System___10826624.manageUsers.resources
+C:\Users\Admin\source\repos\Inventory System - 10826624\Inventory System - 10826624\obj\Debug\net6.0-windows\Inventory_System___10826624.manageCustomers.resources
+C:\Users\Admin\source\repos\Inventory System - 10826624\Inventory System - 10826624\obj\Debug\net6.0-windows\Inventory_System___10826624.manageCategories.resources
