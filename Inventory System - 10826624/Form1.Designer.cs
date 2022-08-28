@@ -35,7 +35,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.USERNAME = new System.Windows.Forms.Label();
             this.PasswordTB = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.UnameTb = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -50,7 +50,7 @@
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.USERNAME);
             this.panel1.Controls.Add(this.PasswordTB);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.UnameTb);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(133, 66);
             this.panel1.Name = "panel1";
@@ -81,6 +81,7 @@
             this.button1.TabIndex = 5;
             this.button1.Text = "LOGIN";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label3
             // 
@@ -118,19 +119,19 @@
             this.PasswordTB.Size = new System.Drawing.Size(191, 31);
             this.PasswordTB.TabIndex = 2;
             // 
-            // textBox1
+            // UnameTb
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.UnameTb.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.BackColor = System.Drawing.Color.White;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(26, 171);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(191, 28);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.UnameTb.BackColor = System.Drawing.Color.White;
+            this.UnameTb.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.UnameTb.Font = new System.Drawing.Font("Segoe UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.UnameTb.Location = new System.Drawing.Point(26, 171);
+            this.UnameTb.Multiline = true;
+            this.UnameTb.Name = "UnameTb";
+            this.UnameTb.Size = new System.Drawing.Size(191, 28);
+            this.UnameTb.TabIndex = 1;
+            this.UnameTb.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label1
             // 
@@ -183,7 +184,7 @@
 
         private Panel panel1;
         private Label label1;
-        private TextBox textBox1;
+        private TextBox UnameTb;
         private Label label2;
         private PictureBox pictureBox1;
         private Button button1;
