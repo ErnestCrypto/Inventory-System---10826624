@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
+
 namespace Inventory_System___10826624
 {
     public partial class manageCustomers : Form
@@ -53,6 +53,24 @@ namespace Inventory_System___10826624
             Customerid.Text = CustomersGV.SelectedRows[0].Cells[0].Value.ToString();
             CustomernameTb.Text = CustomersGV.SelectedRows[0].Cells[1].Value.ToString();
             CustomerPhoneTb.Text = CustomersGV.SelectedRows[0].Cells[2].Value.ToString();
+            Con.Open();
+            SqlDataAdapter sda = new SqlDataAdapter("select Count(*) from OrdersTb1 where CustId = "+Customerid.Text+"",Con);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            orderLabel.Text = dt.Rows[0][0].ToString();
+
+            SqlDataAdapter sda1 = new SqlDataAdapter("select Sum(TotalAmt) from OrdersTb1 where CustId = " + Customerid.Text + "", Con);
+            DataTable dt1 = new DataTable();
+            sda1.Fill(dt1);
+            AmountLabel.Text = dt1.Rows[0][0].ToString();
+
+
+            SqlDataAdapter sda2 = new SqlDataAdapter("select Max(OrderDate) from OrdersTb1 where CustId = " + Customerid.Text + "", Con);
+            DataTable dt2 = new DataTable();
+            sda2.Fill(dt2);
+            DateLabel.Text = dt2.Rows[0][0].ToString();
+
+            Con.Close();
         }
 
         void populate()
@@ -126,6 +144,41 @@ namespace Inventory_System___10826624
             {
 
             }
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void orderLabel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

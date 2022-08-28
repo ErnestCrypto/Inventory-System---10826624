@@ -45,6 +45,7 @@
             this.button3 = new System.Windows.Forms.Button();
             this.UsersGV = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.UsersGV)).BeginInit();
             this.SuspendLayout();
@@ -173,6 +174,7 @@
             this.button1.TabIndex = 6;
             this.button1.Text = "EDIT";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -196,7 +198,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(12, 511);
+            this.button3.Location = new System.Drawing.Point(12, 471);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(146, 35);
             this.button3.TabIndex = 8;
@@ -236,12 +238,12 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.UsersGV.DefaultCellStyle = dataGridViewCellStyle3;
-            this.UsersGV.Location = new System.Drawing.Point(164, 106);
+            this.UsersGV.Location = new System.Drawing.Point(164, 146);
             this.UsersGV.Name = "UsersGV";
             this.UsersGV.ReadOnly = true;
             this.UsersGV.RowTemplate.Height = 25;
             this.UsersGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.UsersGV.Size = new System.Drawing.Size(624, 440);
+            this.UsersGV.Size = new System.Drawing.Size(624, 360);
             this.UsersGV.TabIndex = 9;
             this.UsersGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.UsersGV_CellContentClick);
             // 
@@ -249,16 +251,28 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.Crimson;
             this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 552);
+            this.panel2.Location = new System.Drawing.Point(0, 524);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(800, 26);
             this.panel2.TabIndex = 10;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label4.Location = new System.Drawing.Point(414, 106);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(137, 33);
+            this.label4.TabIndex = 11;
+            this.label4.Text = "USERS LIST";
             // 
             // manageUsers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 578);
+            this.ClientSize = new System.Drawing.Size(800, 550);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.UsersGV);
             this.Controls.Add(this.button3);
@@ -299,5 +313,6 @@
         private DataGridView UsersGV;
         private Panel panel2;
         private Label label3;
+        private Label label4;
     }
 }

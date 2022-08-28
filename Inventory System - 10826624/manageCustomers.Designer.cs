@@ -45,8 +45,20 @@
             this.button1 = new System.Windows.Forms.Button();
             this.buton1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pane = new System.Windows.Forms.Panel();
+            this.orderLabel = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.AmountLabel = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.DateLabel = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CustomersGV)).BeginInit();
+            this.pane.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -94,6 +106,7 @@
             this.label1.Size = new System.Drawing.Size(297, 33);
             this.label1.TabIndex = 0;
             this.label1.Text = "MANAGE CUSTOMERS";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // CustomerPhoneTb
             // 
@@ -179,12 +192,12 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.CustomersGV.DefaultCellStyle = dataGridViewCellStyle3;
-            this.CustomersGV.Location = new System.Drawing.Point(177, 139);
+            this.CustomersGV.Location = new System.Drawing.Point(177, 152);
             this.CustomersGV.Name = "CustomersGV";
             this.CustomersGV.ReadOnly = true;
             this.CustomersGV.RowTemplate.Height = 25;
             this.CustomersGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.CustomersGV.Size = new System.Drawing.Size(611, 360);
+            this.CustomersGV.Size = new System.Drawing.Size(611, 254);
             this.CustomersGV.TabIndex = 12;
             this.CustomersGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.UsersGV_CellContentClick);
             // 
@@ -195,12 +208,13 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(12, 464);
+            this.button3.Location = new System.Drawing.Point(12, 371);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(159, 35);
             this.button3.TabIndex = 17;
             this.button3.Text = "HOME";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -209,7 +223,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(12, 370);
+            this.button2.Location = new System.Drawing.Point(12, 330);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(159, 35);
             this.button2.TabIndex = 16;
@@ -224,7 +238,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(12, 329);
+            this.button1.Location = new System.Drawing.Point(12, 289);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(159, 35);
             this.button1.TabIndex = 15;
@@ -239,7 +253,7 @@
             this.buton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buton1.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.buton1.ForeColor = System.Drawing.Color.White;
-            this.buton1.Location = new System.Drawing.Point(12, 288);
+            this.buton1.Location = new System.Drawing.Point(12, 248);
             this.buton1.Name = "buton1";
             this.buton1.Size = new System.Drawing.Size(159, 35);
             this.buton1.TabIndex = 14;
@@ -255,12 +269,116 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(800, 26);
             this.panel2.TabIndex = 18;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // pane
+            // 
+            this.pane.BackColor = System.Drawing.Color.MediumVioletRed;
+            this.pane.Controls.Add(this.orderLabel);
+            this.pane.Controls.Add(this.label5);
+            this.pane.Location = new System.Drawing.Point(382, 412);
+            this.pane.Name = "pane";
+            this.pane.Size = new System.Drawing.Size(200, 100);
+            this.pane.TabIndex = 29;
+            this.pane.Paint += new System.Windows.Forms.PaintEventHandler(this.orderLabel_Paint);
+            // 
+            // orderLabel
+            // 
+            this.orderLabel.AutoSize = true;
+            this.orderLabel.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.orderLabel.ForeColor = System.Drawing.Color.White;
+            this.orderLabel.Location = new System.Drawing.Point(44, 33);
+            this.orderLabel.Name = "orderLabel";
+            this.orderLabel.Size = new System.Drawing.Size(101, 33);
+            this.orderLabel.TabIndex = 2;
+            this.orderLabel.Text = "Orders";
+            this.orderLabel.Click += new System.EventHandler(this.label6_Click);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(0, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(109, 19);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "Orders Count";
+            this.label5.Click += new System.EventHandler(this.label5_Click);
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.ForestGreen;
+            this.panel4.Controls.Add(this.AmountLabel);
+            this.panel4.Controls.Add(this.label8);
+            this.panel4.Location = new System.Drawing.Point(588, 412);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(200, 100);
+            this.panel4.TabIndex = 30;
+            // 
+            // AmountLabel
+            // 
+            this.AmountLabel.AutoSize = true;
+            this.AmountLabel.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.AmountLabel.ForeColor = System.Drawing.Color.White;
+            this.AmountLabel.Location = new System.Drawing.Point(44, 33);
+            this.AmountLabel.Name = "AmountLabel";
+            this.AmountLabel.Size = new System.Drawing.Size(120, 33);
+            this.AmountLabel.TabIndex = 2;
+            this.AmountLabel.Text = "Amount";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(39, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(125, 19);
+            this.label8.TabIndex = 1;
+            this.label8.Text = "Orders Amount";
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.DodgerBlue;
+            this.panel5.Controls.Add(this.DateLabel);
+            this.panel5.Controls.Add(this.label10);
+            this.panel5.Location = new System.Drawing.Point(12, 412);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(364, 100);
+            this.panel5.TabIndex = 30;
+            // 
+            // DateLabel
+            // 
+            this.DateLabel.AutoSize = true;
+            this.DateLabel.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DateLabel.ForeColor = System.Drawing.Color.White;
+            this.DateLabel.Location = new System.Drawing.Point(3, 33);
+            this.DateLabel.Name = "DateLabel";
+            this.DateLabel.Size = new System.Drawing.Size(61, 24);
+            this.DateLabel.TabIndex = 2;
+            this.DateLabel.Text = "Date";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.Location = new System.Drawing.Point(0, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(125, 19);
+            this.label10.TabIndex = 1;
+            this.label10.Text = "Last Order Date";
+            this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
             // manageCustomers
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 550);
+            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.pane);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -280,6 +398,12 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.CustomersGV)).EndInit();
+            this.pane.ResumeLayout(false);
+            this.pane.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -301,5 +425,14 @@
         private Button button1;
         private Button buton1;
         private Panel panel2;
+        private Panel pane;
+        private Label label5;
+        private Label orderLabel;
+        private Panel panel4;
+        private Label AmountLabel;
+        private Label label8;
+        private Panel panel5;
+        private Label DateLabel;
+        private Label label10;
     }
 }

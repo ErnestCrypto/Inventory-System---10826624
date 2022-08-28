@@ -100,5 +100,22 @@ namespace Inventory_System___10826624
                 populate();
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Con.Open();
+                SqlCommand cmd = new SqlCommand("update UserTb1 set Uname= '"+unameTb.Text+"',Ufullname = '"+fnameTb.Text+"',Upassword='"+PasswordTb.Text+"' where Uphone = '"+PhoneTb.Text+"' ", Con);
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("User has been Successfully Updated");
+                Con.Close();
+                populate();
+            }
+            catch
+            {
+
+            }
+        }
     }
 }

@@ -134,7 +134,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label4.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.label4.Location = new System.Drawing.Point(352, 103);
+            this.label4.Location = new System.Drawing.Point(350, 103);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(226, 33);
             this.label4.TabIndex = 23;
@@ -174,12 +174,12 @@
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.CategoriesGV.DefaultCellStyle = dataGridViewCellStyle3;
-            this.CategoriesGV.Location = new System.Drawing.Point(177, 139);
+            this.CategoriesGV.Location = new System.Drawing.Point(177, 146);
             this.CategoriesGV.Name = "CategoriesGV";
             this.CategoriesGV.ReadOnly = true;
             this.CategoriesGV.RowTemplate.Height = 25;
             this.CategoriesGV.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.CategoriesGV.Size = new System.Drawing.Size(611, 360);
+            this.CategoriesGV.Size = new System.Drawing.Size(611, 372);
             this.CategoriesGV.TabIndex = 22;
             this.CategoriesGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.CategoriesGV_CellContentClick);
             // 
@@ -190,7 +190,7 @@
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(12, 464);
+            this.button3.Location = new System.Drawing.Point(12, 483);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(159, 35);
             this.button3.TabIndex = 27;
@@ -204,7 +204,7 @@
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(12, 365);
+            this.button2.Location = new System.Drawing.Point(12, 373);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(159, 35);
             this.button2.TabIndex = 26;
@@ -219,7 +219,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(12, 324);
+            this.button1.Location = new System.Drawing.Point(12, 332);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(159, 35);
             this.button1.TabIndex = 25;
@@ -234,7 +234,7 @@
             this.buton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buton1.Font = new System.Drawing.Font("Palatino Linotype", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.buton1.ForeColor = System.Drawing.Color.White;
-            this.buton1.Location = new System.Drawing.Point(12, 283);
+            this.buton1.Location = new System.Drawing.Point(12, 291);
             this.buton1.Name = "buton1";
             this.buton1.Size = new System.Drawing.Size(159, 35);
             this.buton1.TabIndex = 24;
