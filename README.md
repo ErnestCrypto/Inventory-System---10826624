@@ -29,7 +29,7 @@ The admin can also print out a summerized report of the orders made each custome
  This system is aimed at making managing inventories convineint and simple for store owners through a simple interactive user interface and basic 
  store owner operations.
 
-
+Youtube video link - https://youtu.be/lZZSe0Tdswg
 
 
 
